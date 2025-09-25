@@ -44,3 +44,18 @@ NODE_DOCKER_PORT=${3000}
 
 TELEGRAM_BOT_TOKEN=${TOKEN}
 ```
+
+### .env файл для Dockerfile
+Пример файла. 
+>  Обязательно ${...} замените на свои значения
+```
+DB_USER=${DBUSER}
+DB_PASSWORD=${PASSWORD}
+DB_LOCAL_PORT=${27017}
+DB_NAME=${DB_NAME}
+DB_HOST=host.docker.internal
+
+NODE_LOCAL_PORT=${3000}
+
+TELEGRAM_BOT_TOKEN=${TOKEN}
+```
